@@ -6,6 +6,10 @@ import Page from './Page.astro';
     <div class="layout">
         <header>
             <img src="layout/header.png" />
+            <div class="welcome-message">
+                <div>Welcome to</div>
+                <div>My Grandia Shrine</div>
+            </div>
         </header>
         <slot />
     </div>
@@ -15,6 +19,15 @@ import Page from './Page.astro';
   .layout {
     display: flex;
     flex-direction: column;
+  }
+  header {
+    position: relative;
+  }
+  .welcome-message {
+    position: absolute;
+    bottom: -20px;
+    width: 100%;
+    text-align: center;
   }
   img {    
     width: 100%;
